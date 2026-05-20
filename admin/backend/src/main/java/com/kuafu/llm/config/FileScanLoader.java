@@ -1,9 +1,10 @@
 package com.kuafu.llm.config;
 
 import com.kuafu.llm.loader.FixedSizeTextSplit;
+import com.kuafu.common.util.SystemPropertyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
-import org.apache.xmlbeans.impl.schema.ClassLoaderResourceLoader;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationListener;
@@ -20,7 +21,7 @@ import java.util.List;
 @ConditionalOnProperty(prefix = "llm", name = "enable", havingValue = "true")
 public class FileScanLoader implements ApplicationListener<ContextRefreshedEvent> {
 
-    private static String PROJECT_ROOT_DIRECTORY = System.getProperty("user.dir").replaceAll("\\\\", "/");
+    private static String PROJECT_ROOT_DIRECTORY = SystemPropertyUtil.get("LLM_FILE_DIR", "./file");
     public static String SEPARATOR_SPOT = ".";
 
     @Autowired

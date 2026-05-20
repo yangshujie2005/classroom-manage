@@ -9,6 +9,7 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import javax.imageio.ImageIO;
@@ -24,6 +25,7 @@ public class BaseTest {
     private String pythonCmd = "D:\\software\\anaconda3\\envs\\charts;D:\\software\\anaconda3\\envs\\charts\\Library\\mingw-w64\\bin;D:\\software\\anaconda3\\envs\\charts\\Library\\usr\\bin;D:\\software\\anaconda3\\envs\\charts\\Library\\bin;D:\\software\\anaconda3\\envs\\charts\\Scripts;D:\\software\\anaconda3\\envs\\charts\\bin;D:\\software\\anaconda3\\condabin;";
 
     @Test
+    @Disabled("Requires local Python environment")
     public void test1() {
         String[] commands;
         //commands = new String[]{"/bin/sh", "-c", "echo $PATH"};
@@ -71,6 +73,7 @@ public class BaseTest {
     }
 
     @Test
+    @Disabled("Requires local PDF file")
     public void test_pdf() throws Exception {
 
         PDDocument document = PDDocument.load(new File("/Users/jiangfei/11.pdf"));

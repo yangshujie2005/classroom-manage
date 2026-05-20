@@ -43,7 +43,7 @@ WORKDIR /app
 RUN mkdir -p /app/data /app/uploadPath
 
 # 从构建阶段复制 jar 包
-COPY --from=builder /app/target/app-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY --from=builder /app/target/admin-app-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # 暴露端口
 EXPOSE 8080

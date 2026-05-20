@@ -10,10 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kuafu</groupId>
-    <artifactId>app</artifactId>
+    <artifactId>admin-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>app</name>
-    <description>Demo project for Spring Boot</description>
+    <name>admin-app</name>
+    <description>Admin backend for Smart Classroom Management</description>
     <properties>
         <java.version>1.8</java.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>

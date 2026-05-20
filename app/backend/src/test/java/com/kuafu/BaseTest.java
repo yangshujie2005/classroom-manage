@@ -5,6 +5,7 @@ import com.kuafu.web.dynamic.VoConverter;
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
@@ -29,6 +30,7 @@ public class BaseTest {
 
 
     @Test
+    @Disabled("Requires local Python environment")
     public void test1() {
         String[] commands;
         //commands = new String[]{"/bin/sh", "-c", "echo $PATH"};
@@ -76,6 +78,7 @@ public class BaseTest {
     }
 
     @Test
+    @Disabled("Requires local OCR test image")
     public void test_orc() {
         String path = "/Users/jiangfei/Documents/kuafu/111.png";
         Tesseract tesseract = new Tesseract();
