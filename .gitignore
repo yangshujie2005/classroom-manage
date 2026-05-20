@@ -1,0 +1,68 @@
+# ===== Node =====
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# ===== Java / Maven =====
+target/
+*.class
+*.jar
+!gradle-wrapper.jar
+*.war
+
+# ===== Maven wrapper (keep only mvnw scripts) =====
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== SQLite databases =====
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+*.db
+*.db-shm
+*.db-wal
+
+# ===== Uploaded files =====
+uploadPath/
+app/data/
+admin/data/
+!app/data/**/.gitkeep
+!admin/data/**/.gitkeep
+
+# ===== Environment =====
+.env
+.env.*
+!.env.development
+
+# ===== Demo bundled tools (JDK, Maven, Node) =====
+demo/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ===== Docker =====
+*.pid
+
+# ===== Misc =====
+*.tmp
+*.temp
+*.bak
+*.orig

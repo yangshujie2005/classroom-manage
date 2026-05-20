@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\NebYae\\\\Desktop\\\\class\" -Depth 2)",
+      "Bash(Select-Object Mode, Name, Length)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" status)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" init)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" branch -m master main)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" remote add origin https://github.com/yangshujie2005/classroom-manage.git)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" remote -v)",
+      "Bash(git -C \"C:/Users/NebYae/Desktop/class\" add -A)"
+    ]
+  }
+}
